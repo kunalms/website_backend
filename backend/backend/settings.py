@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DJANGO_DB_NAME'),
-        'USER': config('DJANGO_DB_USER'),
-        'PASSWORD': config('DJANGO_DB_PASSWORD'),
-        'HOST': config('DJANGO_DB_HOST', 'localhost'),
-        'PORT': config('DJANGO_DB_PORT', 3360),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR/config('DJANGO_DB_NAME'),
+        # 'USER': config('DJANGO_DB_USER'),
+        # 'PASSWORD': config('DJANGO_DB_PASSWORD'),
+        # 'HOST': config('DJANGO_DB_HOST', 'localhost'),
+        # 'PORT': config('DJANGO_DB_PORT', 3360),
     }
 }
 
